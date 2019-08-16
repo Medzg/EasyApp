@@ -26,7 +26,7 @@ namespace EasyApp.ViewModel
 
         private bool OnLoginCanExecute()
         {
-            return !String.IsNullOrEmpty(Username) || String.IsNullOrEmpty(Password); 
+            return !String.IsNullOrEmpty(Username) && !String.IsNullOrEmpty(Password); 
         }
 
         private async void OnLoginExectute()
@@ -53,8 +53,12 @@ namespace EasyApp.ViewModel
         public string Username
         {
             get { return _username; }
-            set { _username = value;
+            set {
+                if( _username != value) { 
+                _username = value;
                 OnPropertyChanged();
+                    ((DelegateCommand)LoginCommand).RaiseCanExecuteChanged();
+                }
             }
         }
         private string _password;
@@ -63,9 +67,14 @@ namespace EasyApp.ViewModel
         public string Password
         {
             get { return _password; }
-            set { _password = value;
-                OnPropertyChanged();
-            }
+            set {
+                if (_password != value)
+                {
+                    _password = value;
+                    OnPropertyChanged();
+                    ((DelegateCommand)LoginCommand).RaiseCanExecuteChanged();
+                }
+                }
         }
 
 

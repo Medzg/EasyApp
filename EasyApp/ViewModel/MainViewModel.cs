@@ -28,10 +28,10 @@ namespace EasyApp.ViewModel
             }
         }
 
-        private FrameworkElement _displayViewModel ;
+        private object _displayViewModel ;
         private IEventAggregator _eventAggregator;
 
-        public FrameworkElement DisplayViewModel
+        public object DisplayViewModel
         {
             get { return _displayViewModel; }
             set { _displayViewModel = value;
@@ -61,19 +61,20 @@ namespace EasyApp.ViewModel
             _eventAggregator = eventAggregator;
             _eventAggregator.GetEvent<AfterLoginEvent>().Subscribe(AfterLoginExecute);
 
-            DisplayViewModel = new LoginView();
-            DisplayViewModel.DataContext = loginViewModel;
+            DisplayViewModel = loginViewModel;
+       
             
         }
 
         private  void AfterLoginExecute(int obj)
         {
-            DisplayViewModel = new HomeView();
-            
-            DisplayViewModel.DataContext = HomeViewModel;
+            DisplayViewModel = HomeViewModel;
 
+            _eventAggregator.GetEvent<AfterLoginEvent>().Unsubscribe((int x)=> { });
             
            
         }
+
+        
     }
 }

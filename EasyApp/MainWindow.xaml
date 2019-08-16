@@ -13,6 +13,9 @@
         <DataTemplate DataType="{x:Type ViewModel:LoginViewModel}">
             <View:LoginView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModel:HomeViewModel}">
+            <View:HomeView/>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <ContentControl Content="{Binding DisplayViewModel}"></ContentControl>
