@@ -1,0 +1,11 @@
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\bin\Debug\EasyApp.Model.dll.config
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\bin\Debug\EasyApp.Model.dll
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\bin\Debug\EasyApp.Model.pdb
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\bin\Debug\EntityFramework.dll
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\bin\Debug\EntityFramework.xml
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\obj\Debug\EasyApp.Model.csproj.CoreCompileInputs.cache
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\obj\Debug\EasyApp.Model.csproj.CopyComplete
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\obj\Debug\EasyApp.Model.dll
+D:\Simple Train\Learning App\EasyApp\EasyApp.Model\obj\Debug\EasyApp.Model.pdb

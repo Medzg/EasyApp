@@ -1,0 +1,17 @@
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EasyApp.DataAccess.dll.config
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EasyApp.DataAccess.dll
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EasyApp.DataAccess.pdb
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EasyApp.Model.dll
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EntityFramework.dll
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EasyApp.Model.pdb
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EasyApp.Model.dll.config
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EntityFramework.xml
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\obj\Debug\EasyApp.DataAccess.csprojAssemblyReference.cache
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\obj\Debug\EasyApp.DataAccess.csproj.CoreCompileInputs.cache
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\obj\Debug\EasyApp.DataAccess.csproj.CopyComplete
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\obj\Debug\EasyApp.DataAccess.dll
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\obj\Debug\EasyApp.DataAccess.pdb
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\obj\Debug\EasyApp.DataAccess.Migrations.IntilialDb.resources
+D:\Simple Train\Learning App\EasyApp\EasyApp.DataAccess\obj\Debug\EasyApp.DataAccess.csproj.GenerateResource.cache
