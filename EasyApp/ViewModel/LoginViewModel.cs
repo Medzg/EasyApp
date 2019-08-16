@@ -36,7 +36,7 @@ namespace EasyApp.ViewModel
             if (data != null)
             {
                 _eventAggreator.GetEvent<AfterLoginEvent>().Publish(data.Id);
-                MessageBox.Show("Hello " + data.FirstName + " " +  data.LastName);
+            
       
             }
             else

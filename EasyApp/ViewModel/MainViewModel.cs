@@ -39,12 +39,25 @@ namespace EasyApp.ViewModel
             }
         }
 
+        private object _homeViewModel;
+
+        public object HomeViewModel
+        {
+            get { return _homeViewModel; }
+            set { _homeViewModel = value;
+                OnPropertyChanged();
+            }
+        }
 
 
 
-        public MainViewModel(LoginViewModel loginViewModel,IEventAggregator eventAggregator)
+
+
+
+        public MainViewModel(LoginViewModel loginViewModel,IEventAggregator eventAggregator , HomeViewModel homeViewModel)
         {
 
+            HomeViewModel = homeViewModel; 
             _eventAggregator = eventAggregator;
             _eventAggregator.GetEvent<AfterLoginEvent>().Subscribe(AfterLoginExecute);
 
@@ -55,7 +68,10 @@ namespace EasyApp.ViewModel
 
         private  void AfterLoginExecute(int obj)
         {
-            MessageBox.Show("PLEASE");
+            DisplayViewModel = new HomeView();
+            
+            DisplayViewModel.DataContext = HomeViewModel;
+
             
            
         }

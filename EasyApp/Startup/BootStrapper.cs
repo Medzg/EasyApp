@@ -20,11 +20,12 @@ namespace EasyApp.Startup
             builder.RegisterType<EasyAppDBContext>().AsSelf();
             builder.RegisterType<UserRepository>().As<IUserRepository>();
             builder.RegisterType<EventAggregator>().As<IEventAggregator>().SingleInstance();
-        
-        
+            builder.RegisterType<HomeViewModel>().AsSelf();
+
             builder.RegisterType<LoginViewModel>().AsSelf();
             builder.RegisterType<MainViewModel>().AsSelf();
             builder.RegisterType<MainWindow>().AsSelf();
+        
             return builder.Build();
         }
     }

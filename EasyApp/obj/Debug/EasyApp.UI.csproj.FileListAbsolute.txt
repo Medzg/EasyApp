@@ -38,3 +38,5 @@ D:\Simple Train\Learning App\EasyApp\EasyApp\bin\Debug\EasyApp.Model.dll.config
 D:\Simple Train\Learning App\EasyApp\EasyApp\bin\Debug\EntityFramework.xml
 D:\Simple Train\Learning App\EasyApp\EasyApp\bin\Debug\EntityFramework.SqlServer.dll
 D:\Simple Train\Learning App\EasyApp\EasyApp\bin\Debug\EntityFramework.SqlServer.xml
+D:\Simple Train\Learning App\EasyApp\EasyApp\obj\Debug\View\HomeView.g.cs
+D:\Simple Train\Learning App\EasyApp\EasyApp\obj\Debug\View\HomeView.baml
