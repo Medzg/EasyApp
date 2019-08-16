@@ -40,3 +40,5 @@ D:\Simple Train\Learning App\EasyApp\EasyApp\bin\Debug\EntityFramework.SqlServer
 D:\Simple Train\Learning App\EasyApp\EasyApp\bin\Debug\EntityFramework.SqlServer.xml
 D:\Simple Train\Learning App\EasyApp\EasyApp\obj\Debug\View\HomeView.g.cs
 D:\Simple Train\Learning App\EasyApp\EasyApp\obj\Debug\View\HomeView.baml
+D:\Simple Train\Learning App\EasyApp\EasyApp\obj\Debug\View\SignUpView.g.cs
+D:\Simple Train\Learning App\EasyApp\EasyApp\obj\Debug\View\SignUpView.baml

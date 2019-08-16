@@ -16,6 +16,9 @@
         <DataTemplate DataType="{x:Type ViewModel:HomeViewModel}">
             <View:HomeView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModel:SingupViewModel}">
+            <View:SignUpView/>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <ContentControl Content="{Binding DisplayViewModel}"></ContentControl>

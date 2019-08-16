@@ -15,9 +15,15 @@ namespace EasyApp.DataService.Repositories
         {
         }
 
+        public  async Task<User> CheckByUsername(string username)
+        {
+            return await Context.Users.SingleOrDefaultAsync(u => u.Username.Equals(username));
+        }
+
         public async Task<User> CheckCredentials(string username,string password)
         {
             return await Context.Users.SingleOrDefaultAsync(u => u.Username.Equals(username) && u.password.Equals(password));
         }
+
     }
 }

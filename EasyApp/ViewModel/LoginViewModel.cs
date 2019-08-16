@@ -22,8 +22,13 @@ namespace EasyApp.ViewModel
             _dataRepository = userRepository;
             LoginCommand = new DelegateCommand(OnLoginExectute, OnLoginCanExecute);
             _eventAggreator = eventAggregator;
+            GoSingupCommand = new DelegateCommand(OnGoSingupCommand);
         }
 
+        private void OnGoSingupCommand()
+        {
+            _eventAggreator.GetEvent<AfterSingupEvent>().Publish(-1);
+        }
         private bool OnLoginCanExecute()
         {
             return !String.IsNullOrEmpty(Username) && !String.IsNullOrEmpty(Password); 
@@ -46,18 +51,20 @@ namespace EasyApp.ViewModel
         }
 
         public ICommand LoginCommand { get; set; }
+        public ICommand GoSingupCommand { get; set; }
 
-      
+
         private string _username;
 
         public string Username
         {
             get { return _username; }
             set {
-                if( _username != value) { 
-                _username = value;
-                OnPropertyChanged();
+                if( _username != value) {
                     ((DelegateCommand)LoginCommand).RaiseCanExecuteChanged();
+                    _username = value;
+                OnPropertyChanged();
+                    
                 }
             }
         }
@@ -70,9 +77,10 @@ namespace EasyApp.ViewModel
             set {
                 if (_password != value)
                 {
+                    ((DelegateCommand)LoginCommand).RaiseCanExecuteChanged();
                     _password = value;
                     OnPropertyChanged();
-                    ((DelegateCommand)LoginCommand).RaiseCanExecuteChanged();
+                   
                 }
                 }
         }

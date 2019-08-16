@@ -1,5 +1,6 @@
 ﻿using EasyApp.Event;
 using EasyApp.View;
+using Prism.Commands;
 using Prism.Events;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 
 namespace EasyApp.ViewModel
 {
@@ -23,7 +25,7 @@ namespace EasyApp.ViewModel
                 if (value != _LoginViewModel)
                 {
                     _LoginViewModel = value;
-                    OnPropertyChanged(); // The property changed method call
+                    OnPropertyChanged();
                 }
             }
         }
@@ -49,21 +51,48 @@ namespace EasyApp.ViewModel
             }
         }
 
+        public object _SingupViewModel { get; set; }
 
 
 
 
 
-        public MainViewModel(LoginViewModel loginViewModel,IEventAggregator eventAggregator , HomeViewModel homeViewModel)
+
+        public MainViewModel(LoginViewModel loginViewModel, IEventAggregator eventAggregator, HomeViewModel homeViewModel,SingupViewModel singupViewModel)
         {
 
             HomeViewModel = homeViewModel; 
             _eventAggregator = eventAggregator;
             _eventAggregator.GetEvent<AfterLoginEvent>().Subscribe(AfterLoginExecute);
-
-            DisplayViewModel = loginViewModel;
+            _eventAggregator.GetEvent<AfterSingupEvent>().Subscribe(AfterSingupExecute);
+            _LoginViewModel = loginViewModel; 
+            DisplayViewModel = _LoginViewModel;
+            _SingupViewModel = singupViewModel;
+          
        
             
+        }
+
+
+        
+
+        private void AfterSingupExecute(int? id)
+        {
+            if (id.HasValue)
+            {
+                if(id.Value!= -1) { 
+                _eventAggregator.GetEvent<AfterLoginEvent>().Publish(id.Value);
+                }
+                else
+                {
+                    ((SingupViewModel)_SingupViewModel).Setup();
+                    DisplayViewModel = _SingupViewModel;
+                }
+            }
+            else
+            {
+                DisplayViewModel = _LoginViewModel;
+            }
         }
 
         private  void AfterLoginExecute(int obj)

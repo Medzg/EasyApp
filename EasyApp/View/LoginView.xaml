@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:EasyApp.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
+
     <UserControl.Resources>
         <Storyboard x:Key="WhenButtonClicked">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label">
@@ -64,10 +64,14 @@
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button_Copy1">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
 
 
-        
+
     </UserControl.Resources>
     <UserControl.Triggers>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="button"/>
@@ -92,9 +96,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="button" Grid.Row="1" Content="SignIn" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="25,10,25,10" Margin="0,0,0,90" Background="{x:Null}" Foreground="#FFFBFBFB"></Button>
+        <Button x:Name="button" Grid.Row="1" Content="Signin" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="25,10,25,10" Margin="0,0,0,90" Background="{x:Null}" Foreground="#FFFBFBFB"></Button>
         <Label x:Name="label1" Content="Username :" HorizontalAlignment="Left" Margin="99,94.5,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Visibility="Hidden"/>
-       
+
         <Label x:Name="label2" Content="Password :" HorizontalAlignment="Left" Margin="99,154.5,0,0" VerticalAlignment="Top" Foreground="White" Background="{x:Null}" Visibility="Hidden"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="25.96" Margin="-236.382,154.5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="202" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" Background="White" Text="{Binding Password}"  FontFamily="./Resources/#Password">
             <TextBox.RenderTransform>
@@ -127,6 +131,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+        <Button x:Name="button_Copy1" Grid.Row="1" Content="Signup" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="25,10,25,10" Margin="465.44,48.52,235.618,138.52" Background="{x:Null}" Foreground="#FFFBFBFB" Width="98.942" Command="{Binding GoSingupCommand}"/>
 
 
     </Grid>
