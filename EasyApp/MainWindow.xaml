@@ -10,6 +10,8 @@
         
         Title="MainWindow" Height="450" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#FF212020">
     <Window.Resources>
+
+      
         <DataTemplate DataType="{x:Type ViewModel:LoginViewModel}">
             <View:LoginView/>
         </DataTemplate>

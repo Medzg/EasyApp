@@ -18,7 +18,7 @@ namespace EasyApp.ViewModel
     {
         private IEventAggregator _eventAggregator;
         private IUserRepository _userRepository;
-
+ 
         public SingupViewModel(IEventAggregator eventAggregator , IUserRepository userRepository)
         {
 

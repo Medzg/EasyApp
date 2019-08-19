@@ -9,4 +9,3 @@ D:\Simple Train\Learning App\EasyApp\EasyApp.Model\obj\Debug\EasyApp.Model.cspro
 D:\Simple Train\Learning App\EasyApp\EasyApp.Model\obj\Debug\EasyApp.Model.csproj.CopyComplete
 D:\Simple Train\Learning App\EasyApp\EasyApp.Model\obj\Debug\EasyApp.Model.dll
 D:\Simple Train\Learning App\EasyApp\EasyApp.Model\obj\Debug\EasyApp.Model.pdb
-D:\Simple Train\Learning App\EasyApp\EasyApp.Model\obj\Debug\EasyApp.Model.csprojAssemblyReference.cache
