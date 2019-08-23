@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Simple Train\Learning App\EasyApp\EasyApp\obj\Debug\
+d:\Simple Train\Learning App\EasyApp\EasyApp\obj\Debug\
 EasyApp
 none
 false
 DEBUG;TRACE
-D:\Simple Train\Learning App\EasyApp\EasyApp\App.xaml
-4266976517
+d:\Simple Train\Learning App\EasyApp\EasyApp\App.xaml
+41583986955
 
-171196638739
-22-1135701115
+18-1122306974
+22-155029479
 MainWindow.xaml;View\HomeView.xaml;View\LoginView.xaml;View\SignUpView.xaml;
 
-False
+True
 
